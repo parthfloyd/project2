@@ -6,4 +6,32 @@ ChatApp101 | Home
 
 {% block body %}
 <h1> Welcome to the ChatApp101!</h1>
+
+<!-- Form to ask the name !-->
+<div id="usernameSpace"></div>
+<form class="form" id="nameForm" method="post" >
+	<label>Please enter your name:  </label><input type="text" name="username" required id="username"> 
+	<input type="submit">
+</form>
+<!--All other content after user has entered the name !-->
+<div id = "afterLogin">
+
+	<div class="container" id="channelDIV">
+		<h1>The Available channel streams are!</h1>
+		<ul id="channelList">
+			<!--JS will enter the list !-->
+		</ul>
+	</div>
+
+	<div class="container" id="createChannelDIV">
+		<h1>You can also create your own Channel and Connect!</h1>
+		<form class="form" id ="createChannelForm" method="post">
+			<input type="text" name="createChannelInput" required id="createChannelInput">
+			<input type="submit">
+		</form>
+	</div>
+
+	
+
+</div>
 {% endblock %}
